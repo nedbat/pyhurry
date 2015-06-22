@@ -34,6 +34,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.ifconfig',
+    'sphinxcontrib.spelling',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -122,6 +123,7 @@ html_theme_options = {
     'description':
         'A quick guide to Python for experienced programmers',
     'show_related': True,
+    'github_button': False,
 
     'font_family':
         'Georgia',

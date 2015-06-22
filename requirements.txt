@@ -1,2 +1,4 @@
 sphinx
 sphinx-autobuild
+sphinxcontrib-spelling
+pyenchant
