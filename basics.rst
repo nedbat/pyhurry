@@ -6,7 +6,7 @@ Basics
 Program text
 ============
 
-In Python, block structure is indicated entirely by indentiation: white space
+In Python, block structure is indicated entirely by indentation: white space
 matters!  No braces, no begin/end.  This is unconventional and controversial,
 but you get used to it.  For example, a simple function definition looks like
 this:

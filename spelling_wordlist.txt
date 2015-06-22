@@ -1,0 +1,13 @@
+booleans
+bytecodes
+del
+esoterica
+len
+printf
+py
+pyc
+str
+Substrings
+Tuples
+unescaped
+versa
