@@ -114,7 +114,9 @@ todo_include_todos = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+import alabaster
+html_theme = 'htheme'
+html_theme_path = ['.', alabaster.get_path()]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -126,13 +128,14 @@ html_theme_options = {
     'github_button': False,
 
     'font_family':
-        'Georgia',
+        #'Hoefler Text, '       old-style figures!
+        #'Constantia, '         old-style figures!
+        #'Book Antiqua, Palatino Linotype, Palatino, '
+        'Georgia Pro, Georgia, '
+        'serif',
     'head_font_family':
-        'Franklin Gothic Medium, '
-        'Franklin Gothic, '
-        'ITC Franklin Gothic, '
-        'Helvetica, '
-        'Arial, '
+        'Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, '
+        'Helvetica, Arial, '
         'sans-serif',
 }
 
