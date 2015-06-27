@@ -23,14 +23,19 @@ this:
         return fact
 
 Comments begin with a hash mark, and continue to the end of the line.  Line 1
-is a comment, and other comments appear on lines 5 and 6.  Line 2 uses the def
-keyword to define a function called factorial that takes a single argument
-called n.  The colon introduces a series of statements, much like an open brace
-in many other languages.  Lines 3 through 7 are part of the function because
-they are indented farther than line 2.  Line 3 assigns 1 to fact.  No semicolon
-is needed to terminate statements.  Line 4 is a while loop (no parentheses are
-needed around the condition), and lines 5 and 6 are part of the while block
-because they are indented farther than line 4.
+is a comment, and other comments appear on lines 5 and 6.  
+
+Line 2 uses the ``def`` keyword to define a function called ``factorial`` that
+takes a single argument called ``n``.  The colon introduces a series of
+statements, much like an open brace in many other languages.  
+
+Lines 3 through 7 are part of the function because they are indented farther
+than line 2.  Line 3 assigns 1 to ``fact``.  No semicolon is needed to
+terminate statements.
+
+Line 4 is a while loop (no parentheses are needed around the condition), and
+lines 5 and 6 are part of the while block because they are indented farther
+than line 4.
 
 Statements end at the end of the line but automatically continue onto other
 lines if needed to balance matching punctuation like parentheses and brackets.

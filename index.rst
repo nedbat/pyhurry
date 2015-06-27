@@ -3,11 +3,8 @@ Python In A Hurry
 #################
 
 This is Python in a Hurry, or more fully, *Python in a Hurry for Experienced
-Programmers Who Don't Want to Learn Yet Another Language*.  It is written for a
-particular audience: developers who need to know enough Python to get a small
-task done, and then want to get back to their real work.  It's especially
-designed for team members who need to learn a little bit, and who have a Python
-guru on hand who can help with the trickier parts.
+Programmers* .  It is a quick introduction to Python for people who have
+programmed before.
 
 Python in a Hurry:
 
@@ -15,17 +12,17 @@ Python in a Hurry:
 
     * will do it quickly.
 
-On the other hand, Python in a Hurry:
+On the other hand, Python in a Hurry won't do everything:
 
-    * will not be complete, showing Python esoterica that will slow down your
-      learning, or
+    * it will not be complete, showing Python esoterica that will slow down
+      your learning, or
 
-    * will not give you a deep understanding of the subtleties of Python, or
+    * it will not give you a deep understanding of the subtleties of Python, or
 
-    * will not try to convince you that Python is the best, or even a good,
+    * it will not try to convince you that Python is the best, or even a good,
       programming language (though it is!), or
 
-    * will not waste your time.
+    * it will not waste your time.
 
 
 Contents
@@ -33,6 +30,7 @@ Contents
 .. toctree::
     :maxdepth: 2
 
+    preliminaries
     basics
     strings
     lists
