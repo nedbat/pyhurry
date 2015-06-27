@@ -3,3 +3,7 @@
 * {
     font-feature-settings: "lnum";
 }
+
+pre {
+    padding: .5em 1em;
+}

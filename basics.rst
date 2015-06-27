@@ -7,9 +7,10 @@ Program text
 ============
 
 In Python, block structure is indicated entirely by indentation: white space
-matters!  No braces, no begin/end.  This is unconventional and controversial,
-but you get used to it.  For example, a simple function definition looks like
-this:
+matters!  No braces, no begin/end.  This is unconventional and can be
+disconcerting at first, but you get used to it.
+
+For example, a simple function definition looks like this:
 
 .. code-block:: python
     :linenos:
@@ -36,6 +37,9 @@ terminate statements.
 Line 4 is a while loop (no parentheses are needed around the condition), and
 lines 5 and 6 are part of the while block because they are indented farther
 than line 4.
+
+Because indentation is significant, you have do it properly.  Use spaces to
+indent, not tab characters.  The standard indent is 4 spaces.
 
 Statements end at the end of the line but automatically continue onto other
 lines if needed to balance matching punctuation like parentheses and brackets.
@@ -74,7 +78,7 @@ You can run the interpreter interactively to experiment::
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
-Python code you type at the >>> prompt is executed, and the value returned is
+Python code you type at the >>> prompt is executed, and the resulting value is
 printed::
 
     >>> 1+2+3
@@ -89,4 +93,4 @@ Files
 =====
 
 Python is typically stored in .py files.  When executed, they are compiled as
-needed into .pyc files in the same directory.
+needed into .pyc files nearby.
