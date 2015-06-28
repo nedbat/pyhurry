@@ -43,14 +43,14 @@ indent, not tab characters.  The standard indent is 4 spaces.
 
 Statements end at the end of the line but automatically continue onto other
 lines if needed to balance matching punctuation like parentheses and brackets.
-Here are two print statements::
+Here are two statements::
 
-    print "Hello there."
-    print "%s %s %s" % (
+    print("Hello there.")
+    print("%s %s %s" % (
         "First string",
         "Second string",
         "Third string"
-        )
+        ))
 
 
 
@@ -62,24 +62,24 @@ value.  There are no type declarations.  A variable that holds an integer can
 then be assigned a string, for example.
 
 Primitive types include integers, floats, strings (both single-byte and
-Unicode), and booleans (with literals True and False).  Built-in complex types
-include lists, dictionaries, and classes.
+Unicode), and booleans (with literals True and False).  Built-in container
+types include lists, dictionaries, and classes.
 
 
-Interpreter
-===========
+Interactive Interpreter
+=======================
 
-Python is an interpreted language, which is compiled on demand into bytecodes.
-You can run the interpreter interactively to experiment::
+Python doesn't need a separate compilation step.  You can run the interpreter
+interactively to experiment::
 
     $ python
-    ActivePython 2.4 Build 243 (ActiveState Corp.) based on
-    Python 2.4 (#60, Nov 30 2004, 09:34:21) [MSC v.1310 32 bit (Intel)] on win32
+    Python 3.4.1 (default, Sep 21 2014, 16:37:17)
+    [GCC 4.2.1 Compatible Apple LLVM 5.1 (clang-503.0.40)] on darwin
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
 
-Python code you type at the >>> prompt is executed, and the resulting value is
-printed::
+Python code you type at the ``>>>`` prompt is executed, and the resulting value
+is displayed::
 
     >>> 1+2+3
     6

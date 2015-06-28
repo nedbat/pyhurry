@@ -30,3 +30,7 @@ are some things to consider:
 
     * Smaller considerations: hosting options, learning resources, skills
       among collaborators, and so on.
+
+For the most part, this tutorial will use Python 3.  Sometimes I'll point out
+a difference between Python 2 and 3, and will highlight the version-specific
+code examples.

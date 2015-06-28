@@ -3,7 +3,7 @@ Strings
 #######
 
 
-Strings are delimited by either single quotes or double quotes: there's no
+String literals are delimited by either single quotes or double quotes: there's no
 difference between the two, except that double quotes can appear unescaped in
 single-quoted strings, and vice-versa.  Backslashes can be used to escape
 characters and create control characters in the usual way::
@@ -14,9 +14,9 @@ characters and create control characters in the usual way::
     'He said, "hello"'
     "Line 1\nLine2"
 
-Strings can also begin with three single quotes or three double quotes.  This
-form of string can cross lines, and the newlines are included into the string
-itself.  These two strings are the same::
+Strings can also begin with three quotes.  This form of string can cross lines,
+and the newlines are included into the string itself.  These two strings are
+the same::
 
     """The first line.
     The second line.
@@ -36,8 +36,27 @@ The r prefix simply changes the escaping rules, it doesn't create a different
 type.  There is no regular expression literal such as you find in Perl, Ruby,
 or JavaScript.
 
-If prefixed with a u (for Unicode), then the string is a Unicode string,
-otherwise it is an single-byte string.
+
+Bytes and Unicode
+=================
+
+Python has two string types: byte string, and Unicode string.  Byte strings are
+sequences of bytes, and Unicode strings are sequences of Unicode codepoints.
+
+This is one of the big differences between Python 2 and Python 3: In Python 2,
+plain-old strings (enclosed in quotes) are byte strings, and in Python 3, they
+are Unicode strings.  You can use a b- prefix in either version to make a byte
+string (``b"like this"``), and you can use a u- prefix in either version to
+make a Unicode string (``u"like this"``).
+
+
+======  =====================  =====================
+prefix  Python 2               Python 3
+======  =====================  =====================
+none    ``"byte string"``      ``"Unicode string"``
+b       ``b"byte string"``     ``b"byte string"``
+u       ``u"Unicode string"``  ``u"Unicode string"``
+======  =====================  =====================
 
 
 Substrings

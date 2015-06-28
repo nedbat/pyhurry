@@ -2,14 +2,15 @@
 Lists
 #####
 
-A list is a complex data type that holds any number of other values, like an array.
+A list is a data type that holds any number of other values as an ordered sequence.
+Other languages call similar structures arrays or vectors.
 Lists are written in square brackets, with commas separating the values.
 The values can be of any type.  Unlike arrays in many other languages,
 the items in the list don't have to all be the same type::
 
     >>> mylist = [ 1, 'hello', 17.23 ]
     >>> mylist
-    [ 1, 'hello', 17.23 ]
+    [1, 'hello', 17.23]
 
 Like strings, lists can be indexed, sliced, concatenated, and so on::
 
@@ -19,37 +20,27 @@ Like strings, lists can be indexed, sliced, concatenated, and so on::
     17.23
     >>> mylist += [ 'Cat', 'Hat' ]
     >>> mylist
-    [ 1, 'hello', 17.23, 'Cat', 'Hat' ]
+    [1, 'hello', 17.23, 'Cat', 'Hat']
     >>> len(mylist)
     5
     >>> mylist[1:3]
-    [ 'hello', 17.23 ]
+    ['hello', 17.23]
 
-
-Lists can be modified by index or slice. Assigning to a slice can change the
-length of the list::
+Lists can be modified by index::
 
     >>> mylist
-    [ 1, 'hello', 17.23, 'Cat', 'Hat' ]
+    [1, 'hello', 17.23, 'Cat', 'Hat']
     >>> mylist[1] = 'bye'
     >>> mylist
-    [ 1, 'bye', 17.23, 'Cat', 'Hat' ]
-    >>> mylist[1:3] = [ 2, 3 ]
-    >>> mylist
-    [ 1, 2, 3, 'Cat', 'Hat' ]
-    >>> mylist[1:3] = [ 10, 20, 30, 40 ]
-    [ 1, 10, 20, 30, 40, 'Cat', 'Hat' ]
-    >>> mylist[1:5] = []
-    >>> mylist
-    [ 1, 'Cat', 'Hat' ]
+    [1, 'bye', 17.23, 'Cat', 'Hat']
 
-Removing elements from a list can also be accomplished with the del statement::
+Or lengthened::
 
-    >>> mylist = [ 1, 10, 20, 30, 40, 'Cat', 'Hat' ]
-    >>> del mylist[1:5]
+    >>> mylist.append("More")
     >>> mylist
-    [1, 'Cat', 'Hat']
-
+    [1, 'bye', 17.23, 'Cat', 'Hat', 'More']
+    >>> mylist.extend([99, 100, 101])
+    [1, 'bye', 17.23, 'Cat', 'Hat', 'More', 99, 100, 101]
 
 Lists are first-class objects with methods::
 
@@ -61,17 +52,21 @@ Lists are first-class objects with methods::
     >>> mynums
     [36, 41, 60, 106, 617, 738]
 
-Converting between strings and lists is easy.  The string method split breaks a
-string into a list of pieces.  The string method join glues together the list
-elements of its argument to make a new string::
+Converting between strings and lists is easy.  The string method ``s.split()``
+breaks a string into a list of pieces based on whitespace.  The string method
+``sep.join(list)`` glues together the list elements of its argument to make a
+new string::
 
     >>> s = 'The Cat in The Hat'
-    >>> s.split()
+    >>> parts = s.split()
+    >>> parts
     ['The', 'Cat', 'in', 'The', 'Hat']
-    >>> s.split('The')
-    ['', ' Cat in ', ' Hat']
+    >>> ":".join(parts)
+    'The:Cat:in:The:Hat'
 
-A <i>list comprehension</i> is a shorthand for creating a list.
+.. todo::
+
+    A list comprehension is a shorthand for creating a list.
 
 
 Tuples
@@ -80,6 +75,48 @@ Tuples
 Tuples are like lists, but are immutable.  They are written with parentheses
 instead of square brackets::
 
-    >>> t = (1,2,3)
+    >>> t = (1, 2, 3)
     >>> len(t)
     3
+
+Being immutable means that once created, they cannot be changed::
+
+    >>> t[1] = 17
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    TypeError: 'tuple' object does not support item assignment
+    >>> t.append(43)
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    AttributeError: 'tuple' object has no attribute 'append'
+    >>>
+
+Because parens are used for grouping also, a single-element tuple needs a
+trailing comma::
+
+    >>> (1)
+    1
+    >>> (1,)
+    (1,)
+    >>>
+
+It's actually the commas that make the tuple, not the parens::
+
+    >>> 1, 2, 3
+    (1, 2, 3)
+    >>>
+
+
+Iteration
+=========
+
+Lists and tuples are ordered: there is a first element, a second element, and
+so on.  The ``for`` statement in Python is good at processing all of the
+elements of a list in order::
+
+    my_data = [1, 7, 10]
+    for x in my_data:
+        print(my_data)
+
+Here ``x`` is assigned each element of the list in turn, and then the body of
+the for loop is executed.

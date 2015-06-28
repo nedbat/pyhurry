@@ -195,3 +195,4 @@ pseudoxml:
 
 spell:
 	$(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/_spell
+	cat _build/_spell/output.txt
