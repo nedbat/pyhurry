@@ -14,13 +14,14 @@ Python in a Hurry:
 
 On the other hand, Python in a Hurry won't do everything:
 
-    * it will not be complete, showing Python esoterica that will slow down
-      your learning, or
+    * it will not be exhaustive, showing Python esoterica that will slow down
+      your learning, and
 
-    * it will not give you a deep understanding of the subtleties of Python, or
+    * it will not give you a deep understanding of the subtleties of Python,
+      and
 
     * it will not try to convince you that Python is the best, or even a good,
-      programming language (though it is!), or
+      programming language (though it is!), and
 
     * it will not waste your time.
 
@@ -35,3 +36,20 @@ Contents
     strings
     lists
     dicts
+    control
+    functions
+    exceptions
+    objects
+    classes
+    stdlib
+
+
+.. todo::
+
+    - community?
+
+    - pypi?
+
+    - packaging?
+
+    - testing?
