@@ -8,39 +8,39 @@ Lists are written in square brackets, with commas separating the values.
 The values can be of any type.  Unlike arrays in many other languages,
 the items in the list don't have to all be the same type::
 
-    >>> mylist = [ 1, 'hello', 17.23 ]
+    >>> mylist = [ 17, 'hello', 3.14159 ]
     >>> mylist
-    [1, 'hello', 17.23]
+    [17, 'hello', 3.14159]
 
 Like strings, lists can be indexed, sliced, concatenated, and so on::
 
     >>> mylist[1]
     'hello'
     >>> mylist[-1]
-    17.23
+    3.14159
     >>> mylist += [ 'Cat', 'Hat' ]
     >>> mylist
-    [1, 'hello', 17.23, 'Cat', 'Hat']
+    [17, 'hello', 3.14159, 'Cat', 'Hat']
     >>> len(mylist)
     5
     >>> mylist[1:3]
-    ['hello', 17.23]
+    ['hello', 3.14159]
 
-Lists can be modified by index::
+Lists can be modified by index. Remember that the first element is index 0::
 
     >>> mylist
-    [1, 'hello', 17.23, 'Cat', 'Hat']
+    [17, 'hello', 3.14159, 'Cat', 'Hat']
     >>> mylist[1] = 'bye'
     >>> mylist
-    [1, 'bye', 17.23, 'Cat', 'Hat']
+    [17, 'bye', 3.14159, 'Cat', 'Hat']
 
 Or lengthened::
 
     >>> mylist.append("More")
     >>> mylist
-    [1, 'bye', 17.23, 'Cat', 'Hat', 'More']
+    [17, 'bye', 3.14159, 'Cat', 'Hat', 'More']
     >>> mylist.extend([99, 100, 101])
-    [1, 'bye', 17.23, 'Cat', 'Hat', 'More', 99, 100, 101]
+    [17, 'bye', 3.14159, 'Cat', 'Hat', 'More', 99, 100, 101]
 
 Lists are first-class objects with methods::
 
