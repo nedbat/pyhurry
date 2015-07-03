@@ -85,7 +85,9 @@ containers. Many values in Python are iterable.  The built-in function
 prints the numbers 0 to 4.  Like list indexes, ``range`` starts at zero and
 omits the final value.
 
-Note that there is no form of ``for`` that works as in C, Java, or Javascript.
+.. rst-class:: if, if_c, if_java, if_js
+
+    There is no form of ``for`` that works as in C, Java, or Javascript.
 
 Loops can be interrupted with the ``break`` statement, which stops the looping
 immediately and carries on with the statement following the loop.  The current

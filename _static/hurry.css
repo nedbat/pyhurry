@@ -11,3 +11,10 @@ pre {
 table.highlighttable td {
     padding: 0 0.25em;
 }
+
+p.if {
+    font-size: 85%;
+    color: #666;
+    background: #FEE;
+    padding: .5em;
+}
