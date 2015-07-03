@@ -128,15 +128,16 @@ html_theme_options = {
     'github_button': False,
 
     'font_family':
-        #'Hoefler Text, '       old-style figures!
-        #'Constantia, '         old-style figures!
-        #'Book Antiqua, Palatino Linotype, Palatino, '
         'Georgia Pro, Georgia, '
         'serif',
     'head_font_family':
         'Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, '
         'Helvetica, Arial, '
         'sans-serif',
+    'code_font_family':
+        'Consolas, '
+        'Menlo, '
+        'monospace',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -199,7 +200,7 @@ html_sidebars = {
 #html_split_index = False
 
 # If true, links to the reST sources are added to the pages.
-#html_show_sourcelink = True
+html_show_sourcelink = False
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #html_show_sphinx = True

@@ -120,3 +120,13 @@ elements of a list in order::
 
 Here ``x`` is assigned each element of the list in turn, and then the body of
 the for loop is executed.
+
+Python provides many other ways to iterate over sequences like lists::
+
+    >>> numbers = [5, 1, 3, 9, 7]
+    >>> sum(numbers)
+    25
+    >>> min(numbers)
+    1
+    >>> max(numbers)
+    9

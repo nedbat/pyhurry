@@ -8,8 +8,8 @@ Before jumping into Python as a language, let's get a few things out of the way.
 Python 2 or Python 3?
 =====================
 
-There are two major versions of Python: 2.x and 3.x.  They are incompatible,
-meaning that Python 2 code will not run in a Python 3 interpreter.  So you have
+There are two major versions of Python: 2.x and 3.x.  They are incompatible:
+Python 2 code will not run in a Python 3 interpreter.  So you have
 to choose which to use.  In the past, this has been a difficult and 
 contentious choice.
 

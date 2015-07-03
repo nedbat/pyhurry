@@ -5,5 +5,9 @@
 }
 
 pre {
-    padding: .5em 1em;
+    padding: .5em .6em;
+}
+
+table.highlighttable td {
+    padding: 0 0.25em;
 }
