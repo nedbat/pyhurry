@@ -53,7 +53,7 @@ Lists are first-class objects with methods::
     [36, 41, 60, 106, 617, 738]
 
 Converting between strings and lists is easy.  The string method ``s.split()``
-breaks a string into a list of pieces based on whitespace.  The string method
+breaks a string into a list of pieces based on white space.  The string method
 ``sep.join(list)`` glues together the list elements of its argument to make a
 new string::
 
@@ -91,7 +91,7 @@ Being immutable means that once created, they cannot be changed::
     AttributeError: 'tuple' object has no attribute 'append'
     >>>
 
-Because parens are used for grouping also, a single-element tuple needs a
+Because parentheses are used for grouping also, a single-element tuple needs a
 trailing comma::
 
     >>> (1)
@@ -100,7 +100,7 @@ trailing comma::
     (1,)
     >>>
 
-It's actually the commas that make the tuple, not the parens::
+It's actually the commas that make the tuple, not the parentheses::
 
     >>> 1, 2, 3
     (1, 2, 3)

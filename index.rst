@@ -46,6 +46,10 @@ Contents
 
 .. todo::
 
+    - string formatting
+   
+    - print
+
     - community?
 
     - pypi?
