@@ -52,7 +52,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'pyhurry'
+project = 'Python in a Hurry'
 copyright = '2015, Ned Batchelder'
 author = 'Ned Batchelder'
 
@@ -126,6 +126,7 @@ html_theme_options = {
         'A quick guide to Python for experienced programmers',
     'show_related': True,
     'github_button': False,
+    'show_powered_by': False,
 
     'font_family':
         'Georgia Pro, Georgia, '

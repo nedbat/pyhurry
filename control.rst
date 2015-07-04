@@ -23,7 +23,7 @@ of omitting punctuation where possible.
 
 Python has no switch statement.  Use an if/elif/elif/else ladder instead.
 
-Combining conditions is done with the ``and`` and ``or`` operators::
+You can combine conditions with the ``and`` and ``or`` operators::
 
     if x < 0 and y < 0:
         print("lower-left quadrant!")
@@ -42,6 +42,12 @@ mathematicians expect, chaining the comparison.  These two tests are equivalent:
 
     if 0 <= x and x < 10:
         print("x is in 0..9")
+
+
+.. todo::
+
+    - ==, not "is".
+
 
 Truthiness
 ==========

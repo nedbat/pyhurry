@@ -79,7 +79,9 @@ interactively to experiment::
     >>>
 
 Python code you type at the ``>>>`` prompt is executed, and the resulting value
-is displayed::
+is displayed:
+
+.. doctest::
 
     >>> 1+2+3
     6

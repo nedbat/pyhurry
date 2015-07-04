@@ -9,3 +9,5 @@ Functions
     - defining them
 
     - positional vs keyword arguments
+
+    - lambdas

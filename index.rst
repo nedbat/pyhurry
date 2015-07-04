@@ -42,6 +42,8 @@ Contents
     objects
     classes
     stdlib
+    next
+    colophon
 
 
 .. todo::
@@ -49,6 +51,8 @@ Contents
     - string formatting
    
     - print
+
+    - virtualenv?
 
     - community?
 

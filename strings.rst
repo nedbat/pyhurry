@@ -6,7 +6,7 @@ Strings
 String literals are delimited by either single quotes or double quotes: there's no
 difference between the two, except that double quotes can appear unescaped in
 single-quoted strings, and vice-versa.  Backslashes can be used to escape
-characters and create control characters in the usual way::
+characters and create control characters in the common way, with backslashes::
 
     "This is a string"
     'This is a string'
@@ -23,7 +23,6 @@ the same::
     The third line."""
 
     'The first line.\nThe second line.\nThe third line.'
-
 
 If prefixed with an r (for a raw string), then backslash escaping doesn't
 apply.  This makes it easier to create strings where backslashes have meaning,
@@ -65,7 +64,9 @@ Substrings
 A single character (actually, a string of length 1) can be extracted with an
 index (which starts at zero).  Substrings can be extracted with "slice"
 notation for selecting a range of elements.  Two indexes are provided, the
-first character to include, and the first character to not include::
+first character to include, and the first character to not include:
+
+.. doctest::
 
     >>> s = "The Cat in The Hat"
     >>> s[0]        # Zeroth character, just a string of length 1.
@@ -76,7 +77,9 @@ first character to include, and the first character to not include::
 If you leave out the first index, it defaults to the beginning of the string.
 If you leave out the second index, it defaults to the end of the string.
 Negative indexes are counted from the end of the string instead of from the
-beginning::
+beginning:
+
+.. doctest::
 
     >>> s = "The Cat in The Hat"
     >>> s[:7]       # From beginning to char 6.
@@ -95,6 +98,8 @@ String operations
 Strings are concatenated with the plus sign, and can be appended to with the
 += assignment statement.
 
+.. doctest::
+
     >>> s = "The Cat in The Hat"
     >>> s[4:7] + s[15:]
     'CatHat'
@@ -102,8 +107,11 @@ Strings are concatenated with the plus sign, and can be appended to with the
     >>> s
     'The Cat in The Hat!!!'
 
-Strings are first-class objects, and have methods::
+Strings are first-class objects, and have methods:
 
+.. doctest::
+    
+    >>> s = "The Cat in the Hat"
     >>> s.lower()       # Returns a new lowercased string
     'the cat in the hat'
     >>> s.upper()
@@ -115,14 +123,18 @@ Strings are first-class objects, and have methods::
     >>> ' Hello '.strip()   # Returns it without whitespace at the ends.
     'Hello'
     >>> s.replace('at', 'op')
-    'The Cop in The Hop'
+    'The Cop in the Hop'
 
-The built-in function len() returns the size of a string::
+The built-in function len() returns the size of a string:
+
+.. doctest::
 
     >>> len(s)
     18
 
-The built-in function str() turns almost anything into a string::
+The built-in function str() turns almost anything into a string:
+
+.. doctest::
 
     >>> mynum = 17
     >>> 'The value is ' + mynum
@@ -133,7 +145,9 @@ The built-in function str() turns almost anything into a string::
     'The value is 17'
 
 Functionality similar to C's printf() is available as the % operator, which
-takes a string as a left operand, and a list of values as the right operand::
+takes a string as a left operand, and a list of values as the right operand:
+
+.. doctest::
 
     >>> mynum = 17
     >>> "The value is %d" % (mynum)

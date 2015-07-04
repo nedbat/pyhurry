@@ -1,0 +1,15 @@
+{%- extends "alabaster/layout.html" %}
+
+{%- block extrahead %}
+    {{ super() }}
+
+    <script>
+    //$(function() { alert("hello"); });
+    </script>
+{%- endblock %}
+
+{%- block footer %}
+    <div class="footer">
+        &copy; {{ copyright }}.
+    </div>
+{%- endblock %}

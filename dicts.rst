@@ -14,13 +14,19 @@ keys and values directly::
         'age': 35,
     }
 
+.. testsetup::
+
+    d = {'name': 'Joe', 'age': 35}
+
 Here the key ``'name'`` maps to the string ``'Joe'``, and the key ``'age'``
 maps to the integer 35.  As with the rest of Python, there is no type
 enforcement. It's fine for the values to be of different types.  It's also
 possible to use different types for keys, but usually they are strings.
 
 Once you have a dictionary, you can index into it to look up the value for a
-key::
+key:
+
+.. doctest::
 
     >>> d['name']
     'Joe'
