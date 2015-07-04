@@ -113,16 +113,12 @@ rewrite the ``third_letter`` example like this:
     ['Diana', 'Rob', 'James', 'Sarina']
 
 A lambda can take arguments just like a regular function, but its body is only
-a single expression.  This::
+a single expression.  These two functions do the same thing::
 
     lambda ARGS: EXPR
 
-is the same as::
-
     def function_name(ARGS):
         return EXPR
-
-(except we had to name the ``def``).
 
 Lambdas are useful when passing a function to another function. Don't overuse
 them.
