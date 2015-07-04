@@ -48,7 +48,13 @@ Contents
 
 .. todo::
 
+    - None, booleans, numbers
+
+    - tuple unpacking assignment
+
     - string formatting
+
+    - special methods
    
     - print
 
