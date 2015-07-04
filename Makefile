@@ -1,7 +1,7 @@
 # Makefile for Sphinx documentation
 #
 
-default: clean html
+default: clean html cleansearch
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
@@ -52,6 +52,9 @@ help:
 
 clean:
 	rm -rf $(BUILDDIR)/*
+
+cleansearch:
+	rm $(BUILDDIR)/html/search*.*
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
