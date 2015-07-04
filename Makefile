@@ -198,3 +198,6 @@ pseudoxml:
 
 spell:
 	$(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/_spell
+
+words: text
+	wc -w _build/text/*.txt
