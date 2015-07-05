@@ -12,14 +12,19 @@ Defining Functions
 
 You define functions with the ``def`` keyword::
 
-    def my_function(arg1, arg2):
-        arg1 *= 2
-        return arg1 + arg2
+    def my_function(x, y):
+        """Returns twice x plus y."""
+        x *= 2
+        return x + y
 
     print(my_function(100, 17))     # Prints 217
 
-The function name and the formal parameters are defined, then the body of the
-function is indented underneath.
+The function name (``my_function``) and the formal parameters (``x`` and ``y``) 
+are defined, then the body of the function is indented underneath.
+
+Functions are documented by including a string literal as the first thing in
+the function body.  This is called a docstring.  Python has tools to collect
+and publish these strings.
 
 When a function is called, the actual arguments are assigned to the formal
 parameters, and the statements in the body of the function are executed.
@@ -36,7 +41,7 @@ ends with no return statement, then the return value is ``None``.
 .. rst-class:: if, if_ruby
 
     Unlike Ruby, you must use parentheses to call functions.  A function name
-    with parentheses simply refers to the function as an object.
+    without parentheses simply refers to the function as an object.
 
 
 Defaults
