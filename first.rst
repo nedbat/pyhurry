@@ -1,6 +1,6 @@
-######
-Basics
-######
+##########
+First Look
+##########
 
 
 Program text
@@ -40,6 +40,24 @@ than line 4.
 
 Because indentation is significant, you have do it properly.  Use spaces to
 indent, not tab characters.  The standard indent is 4 spaces.
+
+By the way, there are a few ways this function is not good Python.  It might
+be written like this:
+
+.. testcode::
+
+    def factorial(n):
+        """Compute the factorial of a number iteratively."""
+        fact = 1
+        for i in range(2, n+1):
+            fact *= i
+        return fact
+
+.. doctest::
+    :hide:
+
+    >>> [factorial(i) for i in range(10)]
+    [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]
 
 Statements end at the end of the line but automatically continue onto other
 lines if needed to balance matching punctuation like parentheses and brackets.

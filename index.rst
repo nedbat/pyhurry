@@ -32,7 +32,7 @@ Contents
     :maxdepth: 2
 
     preliminaries
-    basics
+    first
     strings
     lists
     dicts

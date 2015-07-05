@@ -5,6 +5,7 @@ codepoints
 del
 dict
 dicts
+docstring
 elif
 esoterica
 hashmaps
