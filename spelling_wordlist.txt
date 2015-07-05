@@ -8,6 +8,7 @@ dicts
 docstring
 elif
 esoterica
+globals
 hashmaps
 iterable
 Javascript
@@ -15,6 +16,7 @@ len
 printf
 py
 pyc
+PyPI
 str
 substrings
 Todo
@@ -22,3 +24,4 @@ truthiness
 tuples
 unescaped
 versa
+virtualenv

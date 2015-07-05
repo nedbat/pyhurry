@@ -33,6 +33,7 @@ Contents
 
     preliminaries
     first
+    names
     strings
     lists
     dicts
@@ -62,7 +63,7 @@ Contents
 
     - community?
 
-    - pypi?
+    - PyPI?
 
     - packaging?
 
