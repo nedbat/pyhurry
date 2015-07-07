@@ -13,6 +13,7 @@ hashmaps
 iterable
 Javascript
 len
+positionally
 printf
 py
 pyc
@@ -23,5 +24,6 @@ Todo
 truthiness
 tuples
 unescaped
+untyped
 versa
 virtualenv

@@ -10,10 +10,10 @@ Python's variables are names that refer to values.  Names have no type, and
 there are no variable declarations.  Names are created by assigning a value to
 them::
 
-    x = 1
+    x = "value"
 
-Names include simple identifiers, object attributes, and elements of
-containers::
+The left-hand side of assignment statements can have simple names, object
+attributes, and elements of containers::
 
     name = "value"
     name.attribute = "value"
@@ -26,6 +26,10 @@ type than their old value::
 
     x = 1
     x = "hello"     # This is fine.
+
+This untyped nature of names is true of all of the targets of assignment
+statements.  Generally, where Python can accept a value, it will accept any
+type of value.
 
 
 Values & Types
@@ -92,3 +96,23 @@ name::
 
     x += 1      # x = x + 1
     y *= 2      # y = y * 2
+
+You can chain assignments together to assign the same value to more than one
+name:
+
+    a = b = c = 0
+
+You can also assign a number of values to a number of names at once:
+
+    x, y = 1, 2
+    # Now x is 1 and y is 2
+
+.. rst-class:: if, if-c
+
+    Assignment in Python is a statement, not an expression.  This means that
+    you cannot use assignment where expressions are needed.  For example, you
+    cannot assign to a name and test a value at once as in this C code::
+
+        while (name = next_value()) {
+            do_something_with(name);
+        }
