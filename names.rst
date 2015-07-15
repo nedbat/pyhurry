@@ -102,10 +102,19 @@ name:
 
     a = b = c = 0
 
-You can also assign a number of values to a number of names at once:
+You can also assign a number of values to a number of names at once. These
+assignment statements have the same effect::
 
     x, y = 1, 2
-    # Now x is 1 and y is 2
+
+    x = 1
+    y = 2
+
+except that the left-hand sides are fully evaluated, and then the names are
+assigned.  You can swap variables like this::
+
+    x, y = y, x
+
 
 .. rst-class:: if, if-c
 
