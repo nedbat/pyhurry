@@ -132,7 +132,8 @@ html_theme_options = {
         'Georgia Pro, Georgia, '
         'serif',
     'head_font_family':
-        'Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, '
+        'Roboto, '
+        'Open Sans, '
         'Helvetica, Arial, '
         'sans-serif',
     'code_font_family':
