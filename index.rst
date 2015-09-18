@@ -43,6 +43,7 @@ Contents
     objects
     classes
     stdlib
+    thirdparty
     next
     colophon
 
