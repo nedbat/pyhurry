@@ -72,7 +72,7 @@ Python provides no facility for controlling access to an object's attributes.
 There is no "private" or "protected", everything is public.  You may see people
 talking about "__private" names: they make it more difficult to get at
 attributes, but they are not meant for this purpose, and they don't actually
-prevent code from looking at your attribtutes.
+prevent code from looking at your attributes.
 
 There is a convention in Python that names starting with an underscore are not
 part of the public interface of a class (or module).  The underscore doesn't

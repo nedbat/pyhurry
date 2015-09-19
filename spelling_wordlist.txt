@@ -5,7 +5,9 @@ codepoints
 del
 dict
 dicts
+Django
 docstring
+dunder
 elif
 esoterica
 globals
@@ -13,11 +15,16 @@ hashmaps
 iterable
 Javascript
 len
+lxml
+numpy
 positionally
 printf
 py
 pyc
+pypi
 PyPI
+scipy
+scrapy
 str
 substrings
 Todo
