@@ -70,14 +70,14 @@ Access control
 
 Python provides no facility for controlling access to an object's attributes.
 There is no "private" or "protected", everything is public.  You may see people
-talking about "__private" names: they make it more difficult to get at
-attributes, but they are not meant for this purpose, and they don't actually
-prevent code from looking at your attributes.
+talking about "__private" names, which start with two underscores.  They make
+it more difficult to get at attributes, but they are not meant for this
+purpose, and they don't actually prevent code from looking at your attributes.
 
-There is a convention in Python that names starting with an underscore are not
-part of the public interface of a class (or module).  The underscore doesn't
-stop someone from using the attribute if they are determined to, but it provides
-a clear signal that they weren't meant to use it.
+There is a convention in Python that names starting with an underscore (like
+``_name``) are not part of the public interface of a class (or module).  The
+underscore doesn't stop someone from using the attribute if they are determined
+to, but it provides a clear signal that they weren't meant to use it.
 
 .. rst-class:: if, if_java, if_cpp
 
@@ -99,8 +99,8 @@ in MyClass, as well as all of the ones defined in MyBaseClass.  MyClass can
 override methods defined in MyBaseClass simply by defining its own method with
 the same name.
 
-Python also supports multiple inheritance, where a class can have two (or more!)
-base classes.  This quickly gets complicated, so use it with caution.
+Python also supports multiple inheritance, where a class can have two (or
+more!) base classes.  This quickly gets complicated, so use it with caution.
 
 .. rst-class:: if, if_java
 
@@ -117,8 +117,9 @@ very common in ``__init__`` methods, where you want to make sure that every
 class in the inheritance chain has a chance to do its initialization.
 
 You can't call the method directly, because ``self.__init__`` will simply call
-your own method again, causing an infinite loop.  Python provides the ``super()``
-function to walk up the inheritance chain to find the parent method to call::
+your own method again, causing an infinite loop.  Python provides the
+``super()`` function to walk up the inheritance chain to find the parent method
+to call::
 
     class MyClass(MyBaseClass):
         def __init__(self):
