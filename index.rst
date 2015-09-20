@@ -56,15 +56,9 @@ Contents
 
     - string formatting
 
-    - special methods
-   
     - print
 
-    - virtualenv?
-
     - community?
-
-    - PyPI?
 
     - packaging?
 

@@ -30,8 +30,8 @@ Methods (functions callable on objects) are defined just like regular
 functions, but indented in the body of the class.  Methods always take "self"
 as a first parameter.  This will be the object the method is being called on.
 Any time you want to access or update the attributes of the object, you use
-"self.attr_name".  There is no "object scope" in Python: methods need to use
-the self object passed to them.
+"self.attr_name".  There is no "object scope" in Python: methods need to
+explicitly use the self object passed to them.
 
 .. note::
 
@@ -43,7 +43,7 @@ the self object passed to them.
 You make new objects from classes by calling the class, almost as if it were
 a function::
 
-    greeter = Greeter("Ned")
+    >>> greeter = Greeter("Ned")
 
 When a new object is made, it is initialized by calling the ``__init__`` method
 on the object. ``__init__`` is pronounced "dunder init": dunder is short for
@@ -53,16 +53,16 @@ to "Ned".
 
 Then you can invoke methods on the object::
 
-    greeter.greet()
-    # prints: Hello, Ned
+    >>> greeter.greet()
+    Hello, Ned
 
 When a method is invoked, the object (in this case, greeter) is passed as
 "self".  Other arguments used in the method call are passed as the rest of the
 arguments to the function.  You can use defaulted and keyword arguments just as
 with regular functions::
 
-    greeter.greet("Hola")
-    # prints: Hola, Ned
+    >>> greeter.greet("Hola")
+    Hola, Ned
 
 
 Access control
@@ -167,5 +167,3 @@ brackets with your object::
     11
     >>> d1[999]
     1000
-
-

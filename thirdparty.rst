@@ -78,16 +78,17 @@ tasks:
 
 * numpy, scipy, pandas
 
+* pytest, tox, coverage, mock
 
+* six
+
+* Jinija2
+
+* cryptography
+
+* pylint, flake8, pep8
+
+* pymongo, redis, MySQL-Python, psycopg2
 
 
 .. _PyPI: http://pypi.python.org/
-
-
-.. todo::
-
-   - tons of things out there
-
-   - pip and pypi
-
-   - common go-to tools
