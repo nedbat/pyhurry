@@ -53,7 +53,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Python in a Hurry'
-copyright = '2015, Ned Batchelder'
+copyright = '2015–2016, Ned Batchelder'
 author = 'Ned Batchelder'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -132,7 +132,6 @@ html_theme_options = {
         'Georgia Pro, Georgia, '
         'serif',
     'head_font_family':
-        'Roboto, '
         'Open Sans, '
         'Helvetica, Arial, '
         'sans-serif',

@@ -8,20 +8,19 @@ programmed before.
 
 Python in a Hurry:
 
-    * will teach you enough Python to be productive, and
+    * will teach you enough Python to be productive.
 
     * will do it quickly.
 
 On the other hand, Python in a Hurry won't do everything:
 
     * it will not be exhaustive, showing Python esoterica that will slow down
-      your learning, and
+      your learning.
 
-    * it will not give you a deep understanding of the subtleties of Python,
-      and
+    * it will not give you a deep understanding of the subtleties of Python.
 
     * it will not try to convince you that Python is the best, or even a good,
-      programming language (though it is!), and
+      programming language, though it is!
 
     * it will not waste your time.
 

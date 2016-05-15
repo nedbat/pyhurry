@@ -4,6 +4,15 @@
     font-feature-settings: "lnum";
 }
 
+div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 {
+    font-weight: 600;
+}
+
+div.sphinxsidebar h1 {
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+}
+
 pre {
     padding: .5em .6em;
 }
