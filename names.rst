@@ -64,8 +64,8 @@ Assignment
 ==========
 
 Assignment statements make names refer to values.  The value itself is never
-copied.  Two names can refer to the same value, and when it changes, both names
-see the change:
+copied.  Two names can refer to the same value, and if the value is modified
+in-place, both names see the change:
 
 .. doctest::
 
