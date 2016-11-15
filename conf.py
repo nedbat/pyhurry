@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
 # pyhurry documentation build configuration file, created by
@@ -53,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'Python in a Hurry'
-copyright = '2015–2016, Ned Batchelder'
+copyright = u'2015–2016, Ned Batchelder'
 author = 'Ned Batchelder'
 
 # The version info for the project you're documenting, acts as replacement for
