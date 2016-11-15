@@ -113,42 +113,77 @@ todo_include_todos = True
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-import alabaster
+
+# Choose a theme, 'htheme' or 'better' while we work on them.
 html_theme = 'htheme'
-html_theme_path = ['.', alabaster.get_path()]
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-html_theme_options = {
-    'description':
-        'A quick guide to Python for experienced programmers',
-    'show_related': True,
-    'github_button': False,
-    'show_powered_by': False,
+if html_theme == 'htheme':
 
-    'font_family':
-        'Georgia Pro, Georgia, '
-        'serif',
-    'head_font_family':
-        'Open Sans, '
-        'Helvetica, Arial, '
-        'sans-serif',
-    'code_font_family':
-        'Consolas, '
-        'Menlo, '
-        'monospace',
-}
+    import alabaster
+    html_theme_path = ['.', alabaster.get_path()]
 
-# Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+    html_theme_options = {
+        'description':
+            'A quick guide to Python for experienced programmers',
+        'show_related': True,
+        'github_button': False,
+        'show_powered_by': False,
+
+        'font_family':
+            'Georgia Pro, Georgia, '
+            'serif',
+        'head_font_family':
+            'Open Sans, '
+            'Helvetica, Arial, '
+            'sans-serif',
+        'code_font_family':
+            'Consolas, '
+            'Menlo, '
+            'monospace',
+    }
+
+    html_sidebars = {
+        '**': [
+            'about.html',
+            'navigation.html',
+            'relations.html',
+        ],
+    }
+
+elif html_theme == 'better':
+
+    from better import better_theme_path
+    html_theme_path = [better_theme_path]
+
+    html_theme_options = {
+        'linktotheme': False,
+        'inlinecss': '''
+            body {
+                font-family: Georgia Pro, Georgia, serif;
+                line-height: 145%;
+                font-size: 110%;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-family: "Open Sans", Helvetica, sans-serif;
+            }
+            pre {
+                font-family: Consolas, "Lucida Console", monospace;
+            }
+        ''',
+    }
+
+    html_sidebars = {
+        '**': [
+            'localtoc.html',
+        ],
+    }
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "Python in a Hurry"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-#html_short_title = None
+html_short_title = "Home"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -176,15 +211,6 @@ html_static_path = ['_static']
 # If true, SmartyPants will be used to convert quotes and dashes to
 # typographically correct entities.
 #html_use_smartypants = True
-
-# Custom sidebar templates, maps document names to template names.
-html_sidebars = {
-    '**': [
-        'about.html',
-        'navigation.html',
-        'relations.html',
-    ],
-}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
