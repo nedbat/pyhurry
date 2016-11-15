@@ -107,6 +107,10 @@ more!) base classes.  This quickly gets complicated, so use it with caution.
     Python has no formal notion of interfaces as Java does, though there are
     third-party packages that provide similar features.
 
+.. todo::
+
+    Explain duck-typing?
+
 
 Invoking overridden methods
 ===========================

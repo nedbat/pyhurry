@@ -98,7 +98,7 @@ name::
     y *= 2      # y = y * 2
 
 You can chain assignments together to assign the same value to more than one
-name:
+name::
 
     a = b = c = 0
 
