@@ -54,12 +54,12 @@ Truthiness
 
 In Python, any value can be used as a condition:
 
-    * Numbers are considered false if they are zero, true otherwise.
-      
-    * Empty strings are false, all other strings are true.
+* Numbers are considered false if they are zero, true otherwise.
 
-    * Containers like lists, dicts, tuples, and sets are false if they are
-      empty, true otherwise.
+* Empty strings are false, all other strings are true.
+
+* Containers like lists, dicts, tuples, and sets are false if they are empty,
+  true otherwise.
 
 
 Looping

@@ -40,19 +40,18 @@ definite type.
 
 Python has a rich set of built-in types:
 
-    * Numbers, including unlimited precision integers, double-precision floats,
-      and complex numbers.
+* Numbers, including unlimited precision integers, double-precision floats, and
+  complex numbers.
 
-    * Booleans, with constants ``True`` and ``False``.
+* Booleans, with constants ``True`` and ``False``.
 
-    * A special value, ``None``, used when no other value is appropriate.
+* A special value, ``None``, used when no other value is appropriate.
 
-    * Strings, both byte strings and Unicode strings (see :ref:`strings`).
+* Strings, both byte strings and Unicode strings (see :ref:`strings`).
 
-    * Containers like lists (see :ref:`lists`) and dictionaries (see
-      :ref:`dicts`).
+* Containers like lists (see :ref:`lists`) and dictionaries (see :ref:`dicts`).
 
-    * User-defined objects (see :ref:`classes`).
+* User-defined objects (see :ref:`classes`).
 
 In addition to these conventional data types, in Python many things that you
 might not expect are first-class values, like functions, classes, and modules.

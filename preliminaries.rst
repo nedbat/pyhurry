@@ -21,15 +21,15 @@ building, and determine which provides you with all of what you need.  Then
 choose the highest version number that satisfies all your requirements.  Here
 are some things to consider:
 
-    * Third-party libraries.  In the past, this has been the difficulty with
-      Python 3: too many libraries only supported Python 2.  This is usually
-      no longer a problem, but double-check your requirements to be sure.
+* Third-party libraries.  In the past, this has been the difficulty with Python
+  3: too many libraries only supported Python 2.  This is usually no longer a
+  problem, but double-check your requirements to be sure.
 
-    * Existing code. If you are joining a project already in progress, they
-      may have already made the choice for you.
+* Existing code. If you are joining a project already in progress, they may
+  have already made the choice for you.
 
-    * Smaller considerations: hosting options, learning resources, skills
-      among collaborators, and so on.
+* Smaller considerations: hosting options, learning resources, skills among
+  collaborators, and so on.
 
 For the most part, this tutorial will use Python 3.  Sometimes I'll point out
 a difference between Python 2 and 3, and will highlight the version-specific
