@@ -78,8 +78,8 @@ in-place, both names see the change:
     [1, 2, 3, 4]
 
 
-Assignment statements inside functions make names local to the function. The
-scope a name is the entire function.  There is no block-level scope.
+Assignment statements inside functions make names local to the function. A
+name's scope is the entire function.  There is no block-level scope.
 
 If you want to assign to a name outside of the function, you use the ``global``
 statement, which indicates that the name is global even though it's being

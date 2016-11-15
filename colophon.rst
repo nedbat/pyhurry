@@ -2,6 +2,10 @@
 About PyHurry
 #############
 
-This was written in ReStructured Text, formatted by Sphinx.
+This was written by `Ned Batchelder`_, in ReStructured Text, formatted by
+Sphinx.
 
-Suggestions for changes gladly accepted at GitHub.
+Suggestions for changes are `gladly considered at GitHub`_.
+
+.. _Ned Batchelder: http://nedbatchelder.com
+.. _gladly considered at GitHub: https://github.com/nedbat/pyhurry

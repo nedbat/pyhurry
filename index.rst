@@ -4,7 +4,7 @@ Python In A Hurry
 
 This is Python in a Hurry, or more fully, *Python in a Hurry for Experienced
 Programmers*.  It is a quick introduction to Python for people who have
-programmed before.
+programmed in other languages.
 
 Python in a Hurry:
 
